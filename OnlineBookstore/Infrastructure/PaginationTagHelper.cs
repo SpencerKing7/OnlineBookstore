@@ -46,9 +46,9 @@ namespace OnlineBookstore.Infrastructure
                 if (PageClassesEnabled)
                 {
                     tb.AddCssClass(PageClass);
-                    tb.AddCssClass(i == PageInator.CurrentPage
-                    ? PageClassSelected : PageClassNormal);
+                    tb.AddCssClass(i == PageInator.CurrentPage ? PageClassSelected : PageClassNormal);
                 }
+                tb.AddCssClass(PageClass);
                 tb.InnerHtml.Append(i.ToString());
 
                 final.InnerHtml.AppendHtml(tb);
