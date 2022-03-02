@@ -43,6 +43,5 @@ namespace OnlineBookstore.Controllers
 
             return View(x);
         }
-
     }
 }
