@@ -9,15 +9,15 @@ namespace OnlineBookstore.Components
 {
     public class CartSummaryViewComponent : ViewComponent
     {
-        private SessionBasket cart;
-        public CartSummaryViewComponent (SessionBasket cartService)
+        private Basket basket;
+        public CartSummaryViewComponent (Basket b)
         {
-            cart = cartService;
+            basket = b;
         }
 
         public IViewComponentResult Invoke()
         {
-            return View(cart);
+            return View(basket);
         }
     }
 }

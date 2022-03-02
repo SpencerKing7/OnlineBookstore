@@ -1,7 +1,7 @@
 ﻿@{
 }
 
-@model SessionBasket
+@model Basket
 
 <div class="">
     @if (Model.Items.Count() > 0)
@@ -9,7 +9,7 @@
         <small class="navbar-text">
             <b>Your cart:</b>
             @Model.Items.Sum(x => x.Quantity) item(s)
-            @Model.ComputeTotal().ToString("c")
+            @Model.CalculateTotal().ToString("c")
         </small>
     }
     <a class="btn btn-sm btn-secondary navbar-btn" asp-page="/Purchase"
