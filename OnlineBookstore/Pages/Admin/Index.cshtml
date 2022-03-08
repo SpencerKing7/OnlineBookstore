@@ -1,0 +1,23 @@
+﻿@page "/admin"
+
+@model OnlineBookstore.Pages.Admin.IndexModel
+
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Online Bookstore Admin</title>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <base href="/" />
+</head>
+
+<body>
+
+    <component type="typeof(OnlineBookstore.Pages.Admin.Routed)" render-mode="Server" />
+    <script src="/_framework/blazor.server.js"></script>
+
+</body>
+</html>
