@@ -4,14 +4,12 @@
 
 @model BooksViewModel
 
-<h1>Welcome to the Online Bookstore</h1><br />
+<h1 class="bg-info bg-opacity-30 text-center rounded-pill">Welcome to the Online Bookstore</h1><br />
 
 @foreach (Book b in Model.Books)
 {
     <partial name="BookSummary" model="b" />
 }
-
-<button><a href="#top">Top of Page</a></button>
 
 <div page-inator="@Model.PageInfo" page-action="Index" page-classes-enabled="true" page-class="btn" 
      page-class-normal="btn-outline-dark" page-class-selected="btn-primary" 
