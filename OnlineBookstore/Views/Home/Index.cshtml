@@ -4,7 +4,7 @@
 
 @model BooksViewModel
 
-<h1 class="bg-info bg-opacity-30 text-center rounded-pill">Welcome to the Online Bookstore</h1><br />
+<h1 class="bg-info bg-opacity-30 text-center rounded-pill shadow-lg">Welcome to the Online Bookstore</h1><br />
 
 @foreach (Book b in Model.Books)
 {
@@ -12,7 +12,7 @@
 }
 
 <div page-inator="@Model.PageInfo" page-action="Index" page-classes-enabled="true" page-class="btn" 
-     page-class-normal="btn-outline-dark" page-class-selected="btn-primary" 
+     page-class-normal="btn-outline-dark" page-class-selected="btn-dark" 
      class="btn-group pull-right m-1">
 </div>
 
